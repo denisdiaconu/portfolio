@@ -11,6 +11,7 @@ function App() {
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+  if (!isLoaded) return null;
 
   return (
     <div className={`app ${isLoaded ? 'loaded' : ''}`}>
