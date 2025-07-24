@@ -39,7 +39,7 @@ body {
   transform: translateY(0);
 }
 
-/* NAVBAR */ 
+/* NAVBAR */
 
 .navbar {
   position: fixed;
@@ -76,7 +76,7 @@ body {
 }
 
 .nav-links a {
-  text-decoration: none; /* remove a normal decoration */ 
+  text-decoration: none; /* remove a normal decoration */
   color: var(--text-color);
   font-weight: 500;
   transition: all 0.3 ease;
@@ -85,7 +85,7 @@ body {
 }
 
 .nav-links a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -103,17 +103,10 @@ body {
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .logo-symbol {
-    display: none;
-  }
-}
-
-/* HERO */ 
-
+/* HERO */
 
 .hero {
-  min-height: 100vh;  /* hero section view on load */
+  min-height: 100vh; /* hero section view on load */
   background: linear-gradient(
     135deg,
     var(--gradient-start) 0%,
@@ -226,7 +219,7 @@ body {
 }
 
 .cta-secondary::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
@@ -260,4 +253,73 @@ body {
   color: var(--accent-color);
 }
 
+.floating-card {
+  position: absolute;
+  bottom: 2rem;
+  right: -2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 0.6rem 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-text {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+}
+
+.hero-image-container {
+  flex: 1;
+  position: relative;
+  max-width: 600px;
+}
+
+.code-display {
+  width: 100%;
+}
+
 /* HERO MEDIA QUERIS */
+
+@media (max-width: 768px) {
+  .logo-symbol {
+    display: none;
+  }
+  .hero-image-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    padding-top: 120px;
+  }
+
+  .hero-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}

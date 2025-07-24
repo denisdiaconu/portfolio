@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import React from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -68,15 +69,73 @@ const Hero = () => {
             </motion.a>
           </motion.div>
           <motion.div className="social-links" variants={staggerContainer}>
-            <motion.a href='https://github.com/denisdiaconu' target='_blank'>
+            <motion.a href="https://github.com/denisdiaconu" target="_blank">
               <i className="fab fa-github"></i>
             </motion.a>
-            <motion.a href='https://www.linkedin.com/in/denis-diaconu-1394091b7/' target='_blank'>
+            <motion.a
+              href="https://www.linkedin.com/in/denis-diaconu-1394091b7/"
+              target="_blank"
+            >
               <i className="fab fa-linkedin"></i>
             </motion.a>
-            <motion.a href='https://x.com/Denis__Diaconu' target='_blank'>
+            <motion.a href="https://x.com/Denis__Diaconu" target="_blank">
               <i className="fab fa-twitter"></i>
             </motion.a>
+          </motion.div>
+        </motion.div>
+        <motion.div
+          className="hero-image-container"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <div className="code-display">
+            <SyntaxHighlighter
+              language="typescript"
+              customStyle={{
+                margin: 0,
+                padding: '2rem',
+                height: '100%',
+                borderRadius: '20px',
+                background: 'rgba(30, 41, 59, 0.8)',
+                backdropFilter: 'blur(10px)',
+                marginBottom: 50,
+              }}
+              style={vscDarkPlus}
+            >
+              {`const aboutMe: DeveloperProfile = {
+  codename: "Denis Diaconu",
+  origin: "🇮🇹 Polesella, Italy",
+  role: "Frontend Developer",
+  stack: {
+    languages: ["JavaScript", "TypeScript", "SQL"],
+    frameworks: ["React", "Next.js"],
+    styling: ["Tailwind CSS"],
+    tools: ["Git", "GitHub", "Axios", "REST API"],
+  },
+  traits: [
+    "clean UI enthusiast",
+    "responsive design lover",
+    "dark mode supporter",
+  ],
+  missionStatement:
+    "Creating fast, accessible, and visually polished web apps.",
+  availability: "Available for hire",
+};`}
+            </SyntaxHighlighter>
+          </div>
+           <motion.div
+            className="floating-card"
+            animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} // bounce effect infinite loop
+          >
+            <div className="card-content">
+              <span className="card-icon"> 💻 </span>
+              <span className="card-text">
+                {" "}
+                Currently working on something awesome!
+              </span>
+            </div>
           </motion.div>
         </motion.div>
       </div>
