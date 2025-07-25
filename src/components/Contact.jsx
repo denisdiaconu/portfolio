@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
