@@ -57,7 +57,7 @@ const Contact = () => {
           />
           <motion.button
             type="submit"
-            className="submit-button"
+            className="submit-btn"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95}}
           >
