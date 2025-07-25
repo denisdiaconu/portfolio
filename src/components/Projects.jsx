@@ -40,7 +40,7 @@ const Projects = () => {
         viewport={{ once: true }}
       >
         <motion.a
-          href="https://your-fit-wave-url.com"
+          href="https://github.com/denisdiaconu/fit-wave"
           target="_blank"
           rel="noopener noreferrer"
           className="project-card"
@@ -65,7 +65,7 @@ const Projects = () => {
         </motion.a>
 
         <motion.a
-          href="https://your-travista-url.com"
+          href="https://github.com/denisdiaconu/travista"
           target="_blank"
           rel="noopener noreferrer"
           className="project-card"
@@ -92,7 +92,7 @@ const Projects = () => {
         </motion.a>
 
         <motion.a
-          href="https://your-food-landing-url.com"
+          href="https://github.com/denisdiaconu/food-landing-page"
           target="_blank"
           rel="noopener noreferrer"
           className="project-card"
@@ -118,7 +118,7 @@ const Projects = () => {
           </div>
         </motion.a>
         <motion.a
-          href="https://your-product-landing-url.com"
+          href="https://github.com/denisdiaconu/product-landing-page"
           target="_blank"
           rel="noopener noreferrer"
           className="project-card"
