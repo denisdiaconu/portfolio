@@ -76,7 +76,7 @@ const Contact = () => {
         success: false,
         error: true,
         message: 'Failed to send message!',
-      })
+      });
     }
   };
   return (
@@ -134,7 +134,7 @@ const Contact = () => {
           {formStatus.message && (
             <motion.div
               className={`form-status ${
-                formStatus.success ? "success" : "error"
+                formStatus.success ? 'success' : 'error'
               } `}
             >
               {formStatus.message}

@@ -124,15 +124,15 @@ const Hero = () => {
 };`}
             </SyntaxHighlighter>
           </div>
-           <motion.div
+          <motion.div
             className="floating-card"
             animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} // bounce effect infinite loop
+            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }} // bounce effect infinite loop
           >
             <div className="card-content">
               <span className="card-icon"> 💻 </span>
               <span className="card-text">
-                {" "}
+                {' '}
                 Currently working on something awesome!
               </span>
             </div>

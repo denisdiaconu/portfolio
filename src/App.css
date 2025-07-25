@@ -294,8 +294,11 @@ body {
 /* HERO MEDIA QUERIS */
 
 @media (max-width: 768px) {
-  .logo-symbol {
+  .logo-text {
     display: none;
+  }
+  .logo-symbol {
+    color: var(--accent-color);
   }
   .hero-image-container {
     display: none;
@@ -366,7 +369,7 @@ body {
 }
 
 .project-card::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -402,7 +405,7 @@ body {
 }
 
 .project-image::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -459,7 +462,7 @@ body {
 }
 
 .contact::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -530,7 +533,7 @@ body {
 }
 
 .submit-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
@@ -567,4 +570,12 @@ body {
   background: rgba(239, 68, 68, 0.1);
   border: 1px solid rgba(239, 68, 68, 0.2);
   color: #f87171;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--background);
+  color: var(--text-color);
+  border-top: 1px solid var(--card-border);
 }
