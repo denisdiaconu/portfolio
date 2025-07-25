@@ -8,14 +8,6 @@ const fadeInUp = {
   transition: { duration: 0.6 },
 };
 
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
