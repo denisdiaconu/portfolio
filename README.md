@@ -1,12 +1,65 @@
-# React + Vite
+# Denis Diaconu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, JavaScript, Framer Motion, and CSS. It showcases my projects, skills, and contact info with smooth animations and a clean, user-friendly design.
 
-Currently, two official plugins are available:
+## Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Javascript
+- Framer Motion
+- CSS
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔴 Live <a name = "here"></a>
+**Click [here](https://denisdiaconu.vercel.app/) in order to see the page of this project.**
+
+
+![Page](https://github.com/denisdiaconu/portfolio/blob/master/public/projects/denis-diaconu.png)
+
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps on the command line.
+
+> Clone the project from it's github repo.
+```bash
+
+  $ git clone https://github.com/denisdiaconu/portfolio.git
+  
+```
+
+> Change directory to the root of project
+```bash
+
+  $ cd portfolio
+  
+```
+  
+> Install all dev dependencies
+```bash
+
+  $ npm install
+
+```
+
+> Run the server
+```bash
+
+  $ npm run dev
+
+```
+
+## Authors
+
+👤 **Denis Andrei Diaconu**
+
+- GitHub: [@DenisDiaconu](https://github.com/denisdiaconu)
+- LinkedIn: [Denis Diaconu](https://www.linkedin.com/in/denis-diaconu-1394091b7/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!

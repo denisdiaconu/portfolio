@@ -18,26 +18,26 @@ function App() {
 
   return (
     <>
-    <Navbar />
-    <div className={`app ${isLoaded ? 'loaded' : ''}`}>
-      {' '}
-      <Hero />
-      <Projects />
-      <Contact />
-      <motion.footer
-        className="footer"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
-        <p>
-          &copy; {new Date().getFullYear()} Denis Diaconu. All rights reserved.
-        </p>
-      </motion.footer>
-    </div>
+      <Navbar />
+      <div className={`app ${isLoaded ? 'loaded' : ''}`}>
+        {' '}
+        <Hero />
+        <Projects />
+        <Contact />
+        <motion.footer
+          className="footer"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p>
+            &copy; {new Date().getFullYear()} Denis Diaconu. All rights
+            reserved.
+          </p>
+        </motion.footer>
+      </div>
     </>
-    
   );
 }
 
