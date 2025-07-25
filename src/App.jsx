@@ -17,9 +17,10 @@ function App() {
   if (!isLoaded) return null;
 
   return (
+    <>
+    <Navbar />
     <div className={`app ${isLoaded ? 'loaded' : ''}`}>
       {' '}
-      <Navbar />
       <Hero />
       <Projects />
       <Contact />
@@ -35,6 +36,8 @@ function App() {
         </p>
       </motion.footer>
     </div>
+    </>
+    
   );
 }
 
