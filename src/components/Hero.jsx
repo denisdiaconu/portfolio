@@ -47,7 +47,7 @@ const Hero = () => {
           </motion.h2>
           <motion.p className="hero-description" variants={fadeInUp}>
             I love building web apps that not only work great but feel great to
-            use — blending thoughtful design with solid code to create
+            use, blending thoughtful design with solid code to create
             experiences people love.
           </motion.p>
           <motion.div className="cta-buttons" variants={staggerContainer}>
