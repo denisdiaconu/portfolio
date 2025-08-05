@@ -108,8 +108,8 @@ const Hero = () => {
   origin: "🇮🇹 Polesella, Italy",
   role: "Frontend Developer",
   stack: {
-    languages: ["JavaScript", "TypeScript", "SQL"],
-    frameworks: ["React", "Next.js"],
+    languages: ["JavaScript", "TypeScript", "SQL", "Node.js"],
+    frameworks: ["React", "Next.js", "Redux"],
     styling: ["Tailwind CSS"],
     tools: ["Git", "GitHub", "Axios", "REST API"],
   },
