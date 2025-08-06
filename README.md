@@ -9,7 +9,6 @@ A modern, responsive portfolio website built with React, JavaScript, Framer Moti
 - Framer Motion
 - CSS
 
-
 ## 🔴 Live <a name = "here"></a>
 **Click [here](https://denisdiaconu.vercel.app/) in order to see the page of this project.**
 
